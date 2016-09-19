@@ -12,6 +12,12 @@ indexes:
 
 - kind: Post
   properties:
+  - name: autho
+  - name: created
+    direction: desc
+
+- kind: Post
+  properties:
   - name: author
   - name: created
 
@@ -30,6 +36,12 @@ indexes:
   properties:
   - name: author_key=
   - name: created
+
+- kind: Post
+  properties:
+  - name: user
+  - name: created
+    direction: desc
 
 - kind: Post
   properties:

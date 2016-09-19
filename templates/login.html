@@ -21,6 +21,19 @@
             </div>
         </nav>
 
+
+        <h1>Login</h1>
+            <form action="/login" method="post">
+            <label>Username:</label><input type="text" name="username" value={{username}}><br>
+            <label>Password:</label><input type="password" name="password"/><br>
+            <input type="submit" value="Submit"/>
+            <div class = "error">{{error}}</div>
+            </form>
+        <div>Don't have an account? <a href="/signup">Create one!</a></div>
+
+
+
+
         {% block content %}
         {% endblock %}
     </body>
